@@ -4,19 +4,6 @@ import java.io.*;
 import java.util.*;
 public class Dosyaişlemlerideneme {
     
-    public static String satirAl()
-	{
-		String satir = "";
-		try {
-	InputStreamReader converter = new InputStreamReader(System.in);
-		BufferedReader in = new BufferedReader(converter);
-			satir = in.readLine();
-		} catch (Exception e) {
-			System.out.println("Error! Exception: "+e); 
-		}
-		return satir;
-	}
-
    
     public static void main(String[] args) {
         
@@ -108,10 +95,6 @@ public class Dosyaişlemlerideneme {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/    
 /*-----------------------------------------------------------------------------------------------------------------------------------*/ 
 
-        // 
-        System.out.print("Hello, what's your name? ");
-		String name=satirAl();
-		System.out.println("Hello "+name+"!");
 
        
        
