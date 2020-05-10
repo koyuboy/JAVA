@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>DigiMeet</title>
+    </h:head>
+    <h:body style="background: #EEE">
+        
+        <h2 style="color: blueviolet">Sign Up</h2>
+        <h:form id="signUp">
+            <h:panelGrid columns="2">
+                
+            <h:outputText value="Name"/>   
+            <h:inputText value="#{user.name}"/>
+            <h:outputText value="Surname"/>   
+            <h:inputText value="#{user.surname}"/>
+            <h:outputText value="Country"/>
+            <h:selectOneMenu value="#{user.country}">
+                <f:selectItem itemLabel="Ankara" itemValue="Ankara"/>
+                <f:selectItem itemLabel="İstanbul" itemValue="İstanbul"/>
+                <f:selectItem itemLabel="Sakarya" itemValue="Sakarya"/>
+                <f:selectItem itemLabel="Kayseri" itemValue="Kayseri"/>
+                <f:selectItem itemLabel="Çanakkale" itemValue="Çanakkale"/>
+                <f:selectItem itemLabel="İzmir" itemValue="İzmir"/>
+                <f:selectItem itemLabel="Adana" itemValue="Adana"/>
+                <f:selectItem itemLabel="Bingöl" itemValue="Bingöl"/>
+                <f:selectItem itemLabel="Antalya" itemValue="Antalya"/>
+                <f:selectItem itemLabel="Zonguldak" itemValue="Zonguldak"/>
+                <f:selectItem itemLabel="Bursa" itemValue="Bursa"/>
+            </h:selectOneMenu>
+            <h:outputText value="Gender"/>
+            <h:selectOneRadio value="#{user.gender}">
+                <f:selectItem itemLabel="Female" itemValue="Female"/>
+                <f:selectItem itemLabel="Male" itemValue="Male"/>
+            </h:selectOneRadio>
+            <h:outputText value="E-mail"/>
+            <h:inputText value="#{user.e_mail}"/>
+            <h:outputText value="Password"/>
+            <h:inputSecret value="#{user.password}"/>
+            <h:selectBooleanCheckbox value="#{user.control_of_accept}"/>
+            <h:outputText value="I agree to the terms of service"/>
+            </h:panelGrid>
+            <h:commandButton action="#{user.goSignup()}" value="Submit"/>
+        </h:form>
+        
+        
+    </h:body>
+</html>
+

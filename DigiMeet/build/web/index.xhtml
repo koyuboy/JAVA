@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>DigiMeet</title>
+        <style>
+            h1{
+                font-family: monospace;
+                text-align: center;
+                padding:8px;
+                color:white;
+                font-size: 80px;
+                background-color: #CC0;
+            }
+            h2{
+                font-family: monospace;
+                text-align: center;
+                color:darkorange;
+                font-size: 40px;
+
+
+            }
+        </style>
+    </h:head>
+    <h:body style="background: #EEE">
+        
+        <h:form>
+        <table align="center" border="0" width="800">
+
+            
+                <tr>
+                    <td align="left"></td>
+                    <td align="center"><h1>DigiMeet</h1></td>
+                    <td align="right"></td>
+                </tr>
+                <tr>
+                    <td align="left"></td>
+                    <td align="center"><h2>WELCOME</h2></td>
+                    <td align="right"></td>
+                </tr>
+            <tr align="center">
+                <td align="left"><h:commandButton style="height: 50px" value="Login" action="#{user.goLogin()}"/> </td>
+                <td align="right"><h:commandButton style="height: 50px" value="Sign Up" action="#{user.goSignup()}"/></td>
+                        
+                       
+
+                    
+
+                </tr>
+           
+        </table>
+
+
+
+</h:form>
+    </h:body>
+</html>
+
